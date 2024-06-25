@@ -33,7 +33,7 @@ const HomeScreen = ({ navigation }) => {
         <Text style={styles.selectedText}>Selected: {selectedEndpoint}</Text>
         <Button
           mode="contained"
-          onPress={() => navigation.navigate('Joke', { endpoint: selectedEndpoint })}
+          onPress={() => navigation.navigate('Jokes', { screen: 'Jokes', params: { endpoint: selectedEndpoint } })}
           style={styles.generateButton}
         >
           Generate Jokes
